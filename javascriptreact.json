@@ -1,0 +1,40 @@
+{
+	"React Functional Component": {
+		"prefix": [
+			"rfc"
+		],
+		"body": [
+			"import React from 'react';",
+			"",
+			"const $1 = () => {",
+			"	return (",
+			"		<div></div>",
+			"	)",
+			"};",
+			"export default $2;",
+			""
+		],
+		"description": "Create a new functional react component"
+	},
+	"Use Reducer": {
+		"prefix": [
+			"ur"
+		],
+		"body": [
+			"import {useReducer} from 'react';",
+			"",
+			"const $1 = (state, action) => {",
+			"	switch(action.type) {",
+			"		case '': {",
+			"			return {",
+			"			...state",
+			"			}",
+			"		}",
+			"		default: {",
+			"			throw new Error(`switch case ${action.type} not handled.`);",
+			"		}",
+			"}"
+		],
+		"description": "Create a reducer"
+	}
+}
